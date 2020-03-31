@@ -12,7 +12,7 @@ cursor: pointer;
 &:hover {
   ${greenBoxShadow}
 }
-`
+`;
 export const CenterDiv = styled.div`
 display: grid;
 justify-content: center;
@@ -20,7 +20,7 @@ justify-content: center;
 
 export default function () {
     return <AppContext.Consumer>
-      {({ confirmFavorites }) => 
+      {({confirmFavorites}) => 
         <CenterDiv>
           <ConfirmButtonStyled onClick={confirmFavorites}>
             Confirm Favorites

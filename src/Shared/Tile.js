@@ -19,11 +19,11 @@ export const DeletableTile = styled(SelectableTile)`
     cursor: pointer;
     ${redBoxShadow}
 }
-`;
+`
 
-export const DisableTile = styled(Tile)`
+export const DisabledTile = styled(Tile)`
 &:hover {
     pointer-events: none;
     opacity: 0.4;
 }
-`;
+`
