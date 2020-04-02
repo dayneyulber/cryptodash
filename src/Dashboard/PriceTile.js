@@ -8,25 +8,25 @@ import {greenBoxShadow} from "../Shared/Styles";
 
 const JustifyRight = styled.div`
 justify-self: right;
-`
+`;
 const JustifyLeft = styled.div`
 justify-self: left;
-`
+`;
 
 const TickerPrice = styled.div`
-${fontSizeBig};
-`
+${fontSizeBig}
+`;
 
 const ChangePct = styled.div`
 color: green;
 ${props => props.red && css`
 color: red;
 `}
-`
+`;
 
 const numberFormat = number => {
     return + (number + '').slice(0, 7);
-}
+};
 
 const PriceTileStyled = styled(SelectableTile)`
   ${props =>
@@ -45,13 +45,13 @@ const PriceTileStyled = styled(SelectableTile)`
       ${greenBoxShadow};
       pointer-events: none;
     `}
-`
+`;
 
 function ChangePercent({data}){
     return(
     <JustifyRight> 
         <ChangePct red={data.CHANGEPCT24HOUR < 0}>
-        {numberFormat(data.CHANGEPCT24HOUR)} 
+        {numberFormat(data.CHANGEPCT24HOUR)}% 
         </ChangePct>
     </JustifyRight>
     );
@@ -98,5 +98,5 @@ export default function({ price, index }) {
         ></TileClass>
       }
     </AppContext.Consumer>
-  )
+  );
 }

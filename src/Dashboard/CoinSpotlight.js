@@ -5,7 +5,7 @@ import {AppContext} from "../App/AppProvider";
 import CoinImage from '../Shared/CoinImage';
 
 const SpotlightName = styled.h2`
-text-align_ center;
+text-align: center;
 `
 
 export default function (){
